@@ -1,0 +1,52 @@
+.test{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+
+.test .comments .com {
+    margin-bottom: 20px;
+    display: flex   ;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 2px #777 solid;
+
+}
+
+.test .com img {
+    margin-bottom: 20px;
+    width: 100px;
+    margin-right: 35px;
+}
+
+.test .com p:first-of-type {
+    margin-bottom: 20px ;
+    font-size: 17px;
+    line-height: 1.6;
+
+}
+
+
+.test .com P:last-child {
+color: #777;
+margin-bottom: 20px;
+text-align: right;
+}
+
+
+
+@media (min-width : 767px) {
+    .test , .skills {
+        flex-basis: 45%;
+    }
+    .test .comments .com {
+        display: flex;
+        flex-direction: row;
+    }    
+    .text{
+        text-align: left;
+    }
+}
